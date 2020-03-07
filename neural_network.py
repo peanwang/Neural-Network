@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import special 
-
+import json
 
 class NeuralNetwork:
     '''
@@ -21,12 +21,11 @@ class NeuralNetwork:
         self.hnodes = hiddennodes
         self.onodes = outputnodes
         self.lr = learningrate
-
         self.wih = np.random.normal(0.0, pow(self.inodes, -0.5), (self.hnodes, self.inodes))
         self.who = np.random.normal(0.0, pow(self.hnodes, -0.5), (self.onodes, self.hnodes))
 
         self.activation_function = lambda x: special.expit(x)
-
+                   
 
     def train(self, inputs_list, targets_list):
         '''
@@ -71,4 +70,11 @@ class NeuralNetwork:
         final_outputs = self.activation_function(final_inputs)
 
         return final_outputs
+
+    
+    def save(self):
+        np.save('wih', self.wih)
+        np.save('who', self.who)
+
+
 

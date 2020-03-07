@@ -29,6 +29,7 @@ def Test(hidden_nodes, learning_rate, epochs):
             targets[int(all_values[0])] = 0.99
             n.train(scaled_input, targets)
     
+    n.save()
     # 打开测试mnist
     with open('./data/mnist_test.csv', 'r') as test_file:
         test_list = test_file.readlines()
@@ -164,4 +165,5 @@ def Test_epochs():
 if __name__ == '__main__':
     #Test_learning_rate()
     #Test_hidden_nodes()
-    Test_epochs()
+    #Test_epochs()
+    print(Test(200, 0.2, 5))
