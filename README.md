@@ -2,6 +2,8 @@
 
 ```
 Neural Network:.
+│  .gitattributes
+│  .gitignore
 │  README.md
 │  
 ├─data
@@ -10,12 +12,6 @@ Neural Network:.
 │      mnist_train.csv
 │      mnist_train_100.csv
 │    
-│      
-├─手写识别app
-│      neural_network.py
-│      source2.py
-│      who.npy
-│      wih.npy
 │      
 └─笔记
         bp.png
@@ -31,7 +27,4 @@ Neural Network:.
         矩阵.png
         神经元.PNG
         神经网络.PNG
-        
-
-        
 ```
