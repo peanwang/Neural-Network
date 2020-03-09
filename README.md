@@ -1,33 +1,37 @@
 # Neural Network
 
+```
+Neural Network:.
+│  README.md
+│  
+├─data
+│      mnist_test.csv
+│      mnist_test_10.csv
+│      mnist_train.csv
+│      mnist_train_100.csv
+│    
+│      
+├─手写识别app
+│      neural_network.py
+│      source2.py
+│      who.npy
+│      wih.npy
+│      
+└─笔记
+        bp.png
+        Figure_1.png
+        Figure_2.png
+        Figure_3.png
+        gradient_descent.PNG
+        gradient_descent2.jpg
+        neural_network.py
+        README.md
+        source.py
+        公式.PNG
+        矩阵.png
+        神经元.PNG
+        神经网络.PNG
+        
 
-
-## problem 为什么必须把前后层的每一个神经元与所有其他层的神经元相互连接
-①这种一致的完全连接形式事实上可以相对容易地编码成计算机指令
-
-②神经网络的学习过程将会弱化这些实际上不需要的连接(也就是这些连接的权重将趋近于0)
-
-
-## 矩阵
-
-
-## 反向传播(Back Propagation
-
-
-## 更新权重 & 梯度下降
-误差反向传播到网络的每一层后，应该使用误差来知道调整链接权重。
-但是这个节点都不是简单的线性分类器。这些节点都是加权后的信号进行求和，并应用了sigmoid函数，将所得到的结果输出给下一层的节点。因此，如何真正地更新链接这些复杂节点链接的权重呢？
-即梯度下降算法 Gradient descent
-梯度下降找到代价函数的最小值
-
-|代价函数| costfunction
-|--|--
-|①| $(目标值-实际值)$
-|②| $\|目标值-实际值\|$ 
-|③| $(目标值-实际值)^2$
-第一个代价函数 会由于正负误差相互抵消。所以淘汰
-第二个代价函数，这会是斜率在最小值附件不是连续的。所以淘汰。
-第三个的好处：
-1. 很容易计算出梯度下降的斜率
-2. 代价函数平滑连续。会使梯度下降发挥很好的作用
-3. 越接近最小值，梯度越小。这会使这个函数超调的风险很低。
+        
+```
