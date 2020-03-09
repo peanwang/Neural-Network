@@ -51,6 +51,13 @@
 ![梯度推导](https://github.com/peanwang/Neural-network/blob/master/%E7%AC%94%E8%AE%B0/gradient_descent2.jpg)
 
 
+### 随机初始权重
+书中给出的建议是： 在一个节点传入链接数量平方根倒数的范围内随机采样。
+
+原因是：一些过大的初始权重将会在偏置方向上偏置激活函数，非常大的权重将会使激活函数饱和。一个节点的传入链接越多，就会有越多的信号被叠加在一起。因此：如果链接越多，那么减小权重的范围，很有道理
+
+![norminal](https://github.com/peanwang/Neural-network/blob/master/%E7%AC%94%E8%AE%B0/1.png)
+
 
 ### 瞎测试
 
@@ -67,3 +74,16 @@
 性能和世代的关系：
 
 ![世代](https://github.com/peanwang/Neural-network/blob/master/%E7%AC%94%E8%AE%B0/Figure_3.png)
+
+
+
+### result
+最后：
+
+|隐藏层神经元数量|学习率| 世代
+|--|--|--
+|200| 0.2| 5|
+这个组合，可以使性能达到 96.91%。🆒🆒
+
+
+

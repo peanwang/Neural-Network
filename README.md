@@ -14,6 +14,7 @@ Neural Network:.
 │    
 │      
 └─笔记
+        1.PNG
         bp.png
         Figure_1.png
         Figure_2.png
