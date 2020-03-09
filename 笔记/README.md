@@ -73,7 +73,7 @@
 
 性能和世代的关系：
 
-![世代](https://github.com/peanwang/Neural-network/blob/master/%E7%AC%94%E8%AE%B0/Figure_3.png)
+![世代](https://github.com/peanwang/Neural-network/blob/master/%E7%AC%94%E8%AE%B0/Figure_3.PNG)
 
 
 
