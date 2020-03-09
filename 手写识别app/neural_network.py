@@ -21,7 +21,9 @@ class NeuralNetwork:
         self.hnodes = hiddennodes
         self.onodes = outputnodes
         self.lr = learningrate
+        # 输入层与隐藏参之间的链接权重矩阵 大小为hidden_nodes乘以input_nodes
         self.wih = np.random.normal(0.0, pow(self.inodes, -0.5), (self.hnodes, self.inodes))
+        # 隐藏参和输出层之间的链接权重矩阵 大小为hidden_nodes乘以output_nodes
         self.who = np.random.normal(0.0, pow(self.hnodes, -0.5), (self.onodes, self.hnodes))
 
         self.activation_function = lambda x: special.expit(x)
